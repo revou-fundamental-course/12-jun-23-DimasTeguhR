@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pengubah Suhu Celsius ke Fahrenheit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2 class="title">Kalkulator Konversi suhu dari Celcius ke Fahrenheit</h2>
+  <div class="input-container">
+    <label for="inputCelsius">Celsius</label>
+    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    <!-- Menggunakan input dengan id "inputCelsius" untuk menerima suhu dalam Celsius -->
+  </div>
+  <div class="output-container">
+    <label for="outputFahrenheit">Fahrenheit</label>
+    <span id="outputFahrenheit"></span>
+    <!-- Menampilkan hasil konversi Fahrenheit dalam elemen dengan id "outputFahrenheit" -->
+  </div>
+  <div class="explanation-container">
+    <p id="explanationText"></p>
+    <!-- Menampilkan penjelasan konversi suhu dalam elemen dengan id "explanationText" -->
+  </div>
+  <div class="formula-container">
+    <p class="formula">Rumus: Fahrenheit = (Celsius × 1.8) + 32</p>
+    <!-- Menampilkan rumus konversi suhu dari Celsius ke Fahrenheit -->
+    <p class="explanation">Untuk mengonversi suhu dari Celsius ke Fahrenheit, Anda perlu mengalikan suhu dalam Celsius dengan 1.8, kemudian menambahkan 32.</p>
+    <!-- Memberikan penjelasan tentang cara mengonversi suhu Celsius ke Fahrenheit -->
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
